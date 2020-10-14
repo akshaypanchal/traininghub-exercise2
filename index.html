@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Training Hub Exercise 2</title>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <form method="get" action="#" id="myForm">
+            <h1>Student Table</h1>
+            <h3>Add Student Data: </h3>
+            <label>ID:</lable>
+            <input type="number" name="id" id="id" placeholder="Enter ID">
+            <br>
+            <br>
+            <label>Name:</label>
+            <input type="name" name="name" id="name" placeholder="Enter the Name" >
+            <br><br>
+            <label>Class:</label>
+            <input type="number" name="class" id="std" placeholder="Enter the Class" >
+            <br><br>
+            <label>Teacher:</label>
+            <input type="text" name="teacher" id="teacher" placeholder="Enter the Teacher Name">
+            <br><br>
+            <label>Average Marks:</label>
+            <input type="number" id="avgMarks" name="avgMarks" placeholder="Enter the Average Marks">
+            <input value="Add the Data" type="button" id="submit" onclick="addData()">
+            <hr>
+            <h3>Search the Database:</h3>
+            <label>Search students with Teacher Name:</label>
+            <input type="text" id="searchTeacher" placeholder="Enter the Teacher Name">
+            <input type="button" value="Search the Students" onclick="searchWithTeacher()">
+            <br><br>
+            <label>Search students with Class Number:</label>
+            <input type="text" id="searchClass" placeholder="Enter the Class Number">
+            <input type="button" value="Search the Students" onclick="searchWithClass()">            
+
+        </form>
+        <br>
+        <br>
+        <hr>
+        <h3>Student in the Database</h3>
+        <p id="student_item"></p>
+        <!-- Adding the external script for CURD opeations -->
+        <script src="script.js"></script>
+        <!-- insert Axios CDN -->
+
+    </body>
+</html>
